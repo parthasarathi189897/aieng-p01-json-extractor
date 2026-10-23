@@ -1,0 +1,22 @@
+[
+  {"user_message": "I am facing issue with my order. Milk is missing from the order"},
+  {"user_message": "My order has broken eggs and missing milk"},
+  {"user_message": "Oh my god, you guys are so fast in delivering groceries!"},
+  {"user_message": "Do you know if you guys are closing your corporate office on Saturday"},
+  {"user_message": "I am so much frustrated with you guys. YOu always deliver items in a wrong location and that too multiplea times with missing items."},
+  {"user_message": "Go to hell"},
+  {"user_message": "Hola, donde esta mi pedido #123"},
+  {"user_message": "Could you please help me"},
+  {"user_message": "My order #123 is missing milk in delivery"},
+  {"user_message": "I am waiting for my prescription order #345 from past 1 hour which is very urgent"},
+  {"user_message": "Can I edit my order #567"},
+  {"user_message": "What is the delivery window for my order #478"},
+  {"user_message": "Can I cancel items from my order #234"},
+  {"user_message": "Can I add items to my order #789"},
+  {"user_message": "I want to return few items from my order #678. What is the process"},
+  {"user_message": "I have been charged more for few items in the order #234"},
+  {"user_message": "Could you please help me with missing items from order #456"},
+  {"user_message": "Are you really going to help me?"},
+  {"user_message": "Do you guys sleep?"},
+  {"user_message": "You guys are doing a good job. Happy halloween"}
+]
