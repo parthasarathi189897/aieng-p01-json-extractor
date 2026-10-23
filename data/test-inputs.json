@@ -1,22 +1,63 @@
+
 [
-  {"user_message": "I am facing issue with my order. Milk is missing from the order"},
-  {"user_message": "My order has broken eggs and missing milk"},
-  {"user_message": "Oh my god, you guys are so fast in delivering groceries!"},
-  {"user_message": "Do you know if you guys are closing your corporate office on Saturday"},
-  {"user_message": "I am so much frustrated with you guys. YOu always deliver items in a wrong location and that too multiplea times with missing items."},
-  {"user_message": "Go to hell"},
-  {"user_message": "Hola, donde esta mi pedido #123"},
-  {"user_message": "Could you please help me"},
-  {"user_message": "My order #123 is missing milk in delivery"},
-  {"user_message": "I am waiting for my prescription order #345 from past 1 hour which is very urgent"},
-  {"user_message": "Can I edit my order #567"},
-  {"user_message": "What is the delivery window for my order #478"},
-  {"user_message": "Can I cancel items from my order #234"},
-  {"user_message": "Can I add items to my order #789"},
-  {"user_message": "I want to return few items from my order #678. What is the process"},
-  {"user_message": "I have been charged more for few items in the order #234"},
-  {"user_message": "Could you please help me with missing items from order #456"},
-  {"user_message": "Are you really going to help me?"},
-  {"user_message": "Do you guys sleep?"},
-  {"user_message": "You guys are doing a good job. Happy halloween"}
+  {
+    "message": "hey where is my package?? ordered like a week ago and still nothing. cant find the confirmation email either"
+  },
+  {
+    "message": "My order #ORD-4821 arrived today but one item is missing, and the headphones I did get won't even turn on. Can someone help with both?"
+  },
+  {
+    "message": "Amazing service!!! Paid extra for next-day delivery and it only took FOUR days. Truly impressive work guys."
+  },
+  {
+    "message": "Hi support, random question: do you think AI is going to replace software engineers in the next 5 years? Just curious lol"
+  },
+  {
+    "message": "I honestly don't even know where to start. I placed this order almost two weeks ago because the website said delivery would take 2-3 business days. Fine, I understand delays happen sometimes, but there has been absolutely no useful update since then. The tracking page keeps saying the package is moving through the network, whatever that means, and customer service told me three days ago that someone would get back to me within 24 hours. Nobody did. I took time off work to wait for this delivery because I actually need the item for a project, and now I have to rearrange everything. I also paid for premium shipping, which apparently means absolutely nothing. I've bought from you several times before and never had this much trouble. Please don't send me another generic apology email. I need a real update, a realistic delivery date, and an explanation of whether I can get the shipping fee refunded. Order #ORD-7392."
+  },
+  {
+    "message": "UNACCEPTABLE."
+  },
+  {
+    "message": "Hola, hice un pedido hace 5 días y todavía no ha llegado. Tracking bhi update nahi ho raha hai. Please tell me kya scene hai?"
+  },
+  {
+    "message": "Hello! I just wanted to say your team was really helpful with my last order. No issue at all, just wanted to say thanks. Have a great day!"
+  },
+  {
+    "message": "Order #ORD-9912 was cancelled last week but the money is still missing from my account?? how long does a refund usually take"
+  },
+  {
+    "message": "box arrived looking like it got run over by a truck. the coffee machine inside is cracked too. order ORD-1084. attached pics if they actually upload this time"
+  },
+  {
+    "message": "Can you check what happened with my account? Something looks different and I don't know if it's supposed to be like that."
+  },
+  {
+    "message": "Order #ORD-5520 is late AND you charged me twice. I need the delivery sorted out and that extra charge reversed. Which one do I have to report first?"
+  },
+  {
+    "message": "I got an email saying my order shipped but the website says processing and the app says delivered?? I haven't received anything. Is it shipped or not"
+  },
+  {
+    "message": "This is my third message about order #ORD-2255. If I don't get an actual answer today I'm disputing the payment with my bank and posting the whole conversation online."
+  },
+  {
+    "message": "plz hlp!! cant login 2 my accnt since yday. reset pwd link doesnt wrk says expired evrytime smh"
+  },
+  {
+    "message": "First of all, your website needs dark mode because my eyes are dying lol. Also, seriously, order #ORD-6610 says delivered but nothing is at my door. Can you check?"
+  },
+  {
+    "message": "I've had ENOUGH of this. Every single time. FIX IT."
+  },
+  {
+    "message": "Bonjour, j'ai reçu le mauvais article dans ma commande #ORD-8137. J'ai commandé une taille M mais j'ai reçu une taille XL. Comment puis-je obtenir un échange ?"
+  },
+  {
+    "message": "Good afternoon! I was wondering if you could kindly take a look at my recent purchase whenever you have a moment. Thank you so much for your assistance."
+  },
+  {
+    "message": "Order #ORD-4409 never arrived. Well, technically the tracking says delivered yesterday, but I did get a package... it was for someone named Mike and definitely not what I ordered. Can you figure this out?"
+  }
 ]
