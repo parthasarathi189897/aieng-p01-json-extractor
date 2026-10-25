@@ -8,7 +8,7 @@
 import pytest
 from pydantic import ValidationError
 
-from models.user_input import UserInput
+from models.ticket_triage import TicketTriage
 
 GOOD = {
   "category": "order_issue",
@@ -21,28 +21,28 @@ GOOD = {
 }
 
 def test_valid_reading_parses():
-    r = UserInput(**GOOD)                 # ** spreads the dict into keyword args
+    r = TicketTriage(**GOOD)                 # ** spreads the dict into keyword args
     assert r.category == "order_issue"       # assert = "this must be true"
 
 def test_missing_field_rejected():
     data = {k: v for k, v in GOOD.items() if k != "handoff"}
     with pytest.raises(ValidationError):    # passes only if this block raises
-        UserInput(**data)
+        TicketTriage(**data)
 
 def test_urgency_value_rejected():
     with pytest.raises(ValidationError):
-        UserInput(**{**GOOD, "urgency": -5})
+        TicketTriage(**{**GOOD, "urgency": -5})
 
 def test_confidence_value_passed():
-    r = UserInput(**{**GOOD, "confidence": 0.9})
+    r = TicketTriage(**{**GOOD, "confidence": 0.9})
 def test_confidence_value_rejected():
     with pytest.raises(ValidationError):
-        UserInput(**{**GOOD, "confidence": 10})
+        TicketTriage(**{**GOOD, "confidence": 10})
 
 def test_sentiment_condition_rejected():
     with pytest.raises(ValidationError):
-        UserInput(**{**GOOD, "sentiment": "test"})   # copy GOOD, override one key
+        TicketTriage(**{**GOOD, "sentiment": "test"})   # copy GOOD, override one key
 
 def test_confidenceJ_type_rejected():
     with pytest.raises(ValidationError):
-        UserInput(**{**GOOD, "confidence": "low"})
+        TicketTriage(**{**GOOD, "confidence": "low"})
