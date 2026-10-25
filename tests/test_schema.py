@@ -33,6 +33,8 @@ def test_urgency_value_rejected():
     with pytest.raises(ValidationError):
         UserInput(**{**GOOD, "urgency": -5})
 
+def test_confidence_value_passed():
+    r = UserInput(**{**GOOD, "confidence": 0.9})
 def test_confidence_value_rejected():
     with pytest.raises(ValidationError):
         UserInput(**{**GOOD, "confidence": 10})

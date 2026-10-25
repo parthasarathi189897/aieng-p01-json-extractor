@@ -10,4 +10,4 @@ class UserInput(BaseModel):
     summary: str = Field(max_length=50)
     suggested_response: str = Field(max_length=80)
     handoff: bool
-    confidence: Literal[0,1]
+    confidence: float = Field(ge=0,le=1)
