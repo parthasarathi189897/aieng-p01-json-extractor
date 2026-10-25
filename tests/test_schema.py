@@ -17,8 +17,7 @@ GOOD = {
   "summary": "Customer has not received their order",
   "suggested_response": "Sorry for the delay. Let me check your order status.",
   "handoff": True,
-  "confidence": 95,
-  "id": 1001
+  "confidence": 0
 }
 
 def test_valid_reading_parses():
@@ -29,6 +28,14 @@ def test_missing_field_rejected():
     data = {k: v for k, v in GOOD.items() if k != "handoff"}
     with pytest.raises(ValidationError):    # passes only if this block raises
         UserInput(**data)
+
+def test_urgency_value_rejected():
+    with pytest.raises(ValidationError):
+        UserInput(**{**GOOD, "urgency": -5})
+
+def test_confidence_value_rejected():
+    with pytest.raises(ValidationError):
+        UserInput(**{**GOOD, "confidence": 10})
 
 def test_sentiment_condition_rejected():
     with pytest.raises(ValidationError):
