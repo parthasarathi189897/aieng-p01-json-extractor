@@ -7,3 +7,15 @@ requires-python = ">=3.11"
 dependencies = [
     "pydantic>=2.13.5",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
