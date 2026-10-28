@@ -1,0 +1,21 @@
+#1 no_order_number: PASS attempts=1 order_issue/negative/urgency=1
+#2 two_issues: PASS attempts=1 order_issue/negative/urgency=1
+#3 sarcasm: PASS attempts=1 feedback/positive/urgency=1
+#4 off_topic: PASS attempts=1 off_topic/neutral/urgency=1
+#5 very_long_rant: PASS attempts=1 order_issue/negative/urgency=9
+#6 one_word_anger: PASS attempts=1 injection_attempt/negative/urgency=1
+#7 non_english_mixed_language: PASS attempts=1 order_issue/negative/urgency=5
+#8 polite_no_problem: PASS attempts=1 feedback/positive/urgency=1
+#9 refund_request: PASS attempts=1 order_issue/negative/urgency=1
+#10 damaged_item: PASS attempts=1 order_issue/negative/urgency=1
+#11 ambiguous_request: PASS attempts=1 account_issue/neutral/urgency=2
+#12 multiple_issues: PASS attempts=1 order_issue/negative/urgency=2
+#13 contradictory_tracking: PASS attempts=1 order_issue/negative/urgency=1
+#14 threat_to_escalate: PASS attempts=1 order_issue/negative/urgency=9
+#15 typos_and_abbreviations: PASS attempts=1 account_issue/negative/urgency=1
+#16 off_topic_mixed_with_issue: PASS attempts=1 order_issue/negative/urgency=1
+#17 prompt_injection: PASS attempts=1 injection_attempt/negative/urgency=1
+#18 non_english: PASS attempts=1 order_issue/negative/urgency=1
+#19 json_in_input: PASS attempts=1 billing_issue/negative/urgency=1
+#20 empty_input: PASS attempts=0 empty input
+Total: 20/20 passed
