@@ -1,0 +1,43 @@
+latency=8482ms input_tokens=170 output_tokens=129
+#1 no_order_number: PASS attempts=1 order_issue/negative/urgency=1
+latency=6838ms input_tokens=181 output_tokens=114
+#2 two_issues: PASS attempts=1 order_issue/negative/urgency=1
+latency=6278ms input_tokens=169 output_tokens=106
+#3 sarcasm: PASS attempts=1 feedback/positive/urgency=1
+latency=7990ms input_tokens=175 output_tokens=133
+#4 off_topic: PASS attempts=1 off_topic/neutral/urgency=1
+latency=8271ms input_tokens=337 output_tokens=123
+#5 very_long_rant: PASS attempts=1 order_issue/negative/urgency=9
+latency=5195ms input_tokens=152 output_tokens=80
+#6 one_word_anger: PASS attempts=1 injection_attempt/negative/urgency=1
+latency=6513ms input_tokens=187 output_tokens=108
+#7 non_english_mixed_language: PASS attempts=1 order_issue/negative/urgency=5
+latency=7665ms input_tokens=181 output_tokens=116
+#8 polite_no_problem: PASS attempts=1 feedback/positive/urgency=1
+latency=6823ms input_tokens=176 output_tokens=105
+#9 refund_request: PASS attempts=1 order_issue/negative/urgency=1
+latency=6289ms input_tokens=183 output_tokens=104
+#10 damaged_item: PASS attempts=1 order_issue/negative/urgency=1
+latency=5888ms input_tokens=174 output_tokens=98
+#11 ambiguous_request: PASS attempts=1 account_issue/neutral/urgency=2
+latency=7487ms input_tokens=183 output_tokens=115
+#12 multiple_issues: PASS attempts=1 order_issue/negative/urgency=2
+latency=5712ms input_tokens=179 output_tokens=94
+#13 contradictory_tracking: PASS attempts=1 order_issue/negative/urgency=1
+latency=6258ms input_tokens=186 output_tokens=104
+#14 threat_to_escalate: PASS attempts=1 order_issue/negative/urgency=9
+latency=6125ms input_tokens=178 output_tokens=101
+#15 typos_and_abbreviations: PASS attempts=1 account_issue/negative/urgency=1
+latency=6441ms input_tokens=187 output_tokens=107
+#16 off_topic_mixed_with_issue: PASS attempts=1 order_issue/negative/urgency=1
+latency=5572ms input_tokens=207 output_tokens=88
+#17 prompt_injection: PASS attempts=1 injection_attempt/negative/urgency=1
+latency=7071ms input_tokens=194 output_tokens=118
+#18 non_english: PASS attempts=1 order_issue/negative/urgency=1
+latency=4921ms input_tokens=201 output_tokens=80
+#19 json_in_input: PASS attempts=1 billing_issue/negative/urgency=1
+#20 empty_input: PASS attempts=0 empty input
+Total: 20/20 passed
+p95 latency: 8482ms over 19 LLM calls
+avg tokens: input=189.5 output=106.5
+$ per call: local=$0 gpt-4o-mini=$0.000092

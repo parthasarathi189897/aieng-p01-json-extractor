@@ -39,3 +39,19 @@ Customer message → `TicketTriage` (pydantic) using a local Ollama model.
 ## Results (2026-10-27, llama3.1:8b)
 
 20/20 passed, all on attempt 1. #20 empty input was rejected before the LLM.
+
+## Numbers (2026-11-01, llama3.1:8b)
+
+Measured over 19 LLM calls (#20 never reaches the LLM), with the model already loaded.
+Full output: `results/2026-11-01-llama3.1-8b.txt`.
+
+| Metric | Value |
+|---|---|
+| Avg input tokens | 189.5 |
+| Avg output tokens | 106.5 |
+| $ per call | $0 local / $0.000092 gpt-4o-mini equivalent |
+| p95 latency | 8482ms (nearest rank, so the slowest call at this sample size) |
+| Pass rate | 20/20 |
+
+gpt-4o-mini uses $0.15 input / $0.60 output per 1M tokens at standard rates. Token counts come from
+Ollama's `prompt_eval_count` and `eval_count`, so they are llama's tokenizer, not OpenAI's.

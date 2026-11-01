@@ -6,6 +6,8 @@ from models.ticket_triage import TicketTriage
 MODEL = "llama3.1:8b"
 MAX_ATTEMPTS = 3
 latencies = []  # ms for every LLM call, retries included
+input_tokens = []
+output_tokens = []
 
 
 class ExtractionFailed(Exception):
@@ -26,7 +28,9 @@ def call_llm(messages):
     # Ollama reports total_duration in nanoseconds
     latency_ms = response["total_duration"] / 1_000_000
     latencies.append(latency_ms)
-    print(f"latency={latency_ms:.0f}ms")
+    input_tokens.append(response["prompt_eval_count"])
+    output_tokens.append(response["eval_count"])
+    print(f"latency={latency_ms:.0f}ms input_tokens={input_tokens[-1]} output_tokens={output_tokens[-1]}")
     return response["message"]["content"]
 
 
