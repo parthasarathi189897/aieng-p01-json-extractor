@@ -1,6 +1,11 @@
 import json
+import math
 
-from output_generator import ExtractionFailed, extract
+from output_generator import ExtractionFailed, extract, latencies
+
+
+def p95(values):
+    return sorted(values)[math.ceil(0.95 * len(values)) - 1]
 
 
 # Step 6: batch runner over all 20 fixtures
@@ -23,6 +28,7 @@ def main():
         print(f"#{fixture['id']} {fixture['case']}: {'PASS' if ok else 'FAIL'} attempts={attempts} {detail}")
 
     print(f"Total: {passed}/{len(fixtures)} passed")
+    print(f"p95 latency: {p95(latencies):.0f}ms over {len(latencies)} LLM calls")
 
 
 if __name__ == "__main__":
